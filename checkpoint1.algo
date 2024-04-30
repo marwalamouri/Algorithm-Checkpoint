@@ -1,0 +1,22 @@
+ALGORITHM readSentence    
+VAR  
+  i,NB_Voyels:INTEGER:=0;  
+  NB_Words:INTEGER:=1;  
+  str:STRING;   
+BEGIN  
+  Write("Type the sentence ")
+  Read(str)  
+  WHILE (str[i]<>".")Do  
+    IF (str[i]=" ") THEN  
+      NB_Words:= NB_Words+1  
+    END_IF  
+    IF (str[i]="a" OR str[i]="e" OR  str[i]="e" OR str[i]="i" OR str[i]="o" OR str[i]="u" or str[i]="Y") THEN
+      NB_Voyels:=NB+1  
+    END_IF  
+    i:=i+1    
+ 
+  END_WHILE
+  Write("voyels :",NB_Voyels)  
+  Write("the number of words",NB_Words)
+  Write("the length of the sentence :",i)  
+END
